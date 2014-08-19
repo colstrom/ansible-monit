@@ -1,0 +1,10 @@
+---
+- name: Service Started | monit
+  service:
+    state: started
+    name: monit
+    enabled: yes
+  tags:
+    - validation
+    - using-service
+    - monit

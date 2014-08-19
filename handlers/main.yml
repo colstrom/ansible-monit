@@ -1,0 +1,8 @@
+---
+- name: Reload Service | monit
+  service:
+    state: reloaded
+    name: monit
+  tags:
+    - using-service
+    - monit

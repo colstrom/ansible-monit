@@ -1,0 +1,13 @@
+---
+- name: Upload Config | monit
+  template:
+    src: etc/monit/monitrc
+    dest: /etc/monit/monitrc
+    owner: root
+    group: wcmetrics
+    mode: 0600
+  notify: Reload Service | monit
+  tags:
+    - configuration
+    - template-configuration
+    - monit
