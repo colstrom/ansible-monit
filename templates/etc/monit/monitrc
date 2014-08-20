@@ -16,7 +16,7 @@
 ##
 ## Start Monit in the background (run as a daemon):
 #
-  set daemon 15            # check services at 2-minute intervals
+  set daemon {{ monit_poll_rate }}            # check services at 2-minute intervals
 #   with start delay 240    # optional: delay the first check by 4-minutes (by
 #                           # default Monit check immediately after Monit start)
 #
@@ -26,7 +26,7 @@
 ## a standalone log file instead, specify the full path to the log file
 #
 # set logfile syslog facility log_daemon
-  set logfile /var/log/monit.log
+  set logfile {{ monit_log_path }}
 #
 #
 ## Set the location of the Monit id file which stores the unique id for the
