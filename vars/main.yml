@@ -1,0 +1,5 @@
+---
+monit_poll_rate: 15
+
+monit_log_root: "{{ log_root }}/monit"
+monit_log_path: "{{ monit_log_root }}/monit.log"
