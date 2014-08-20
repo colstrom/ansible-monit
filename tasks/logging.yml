@@ -1,8 +1,8 @@
 ---
-- name: "Directory Exists | {{ monit_log_path }}"
+- name: "Directory Exists | {{ monit_log_root }}"
   file:
     state: directory
-    path: "{{ monit_log_path }}"
+    path: "{{ monit_log_root }}"
     owner: "{{ monit_user }}"
     group: wcmetrics
     mode: 0775
