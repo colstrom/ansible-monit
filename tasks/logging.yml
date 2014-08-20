@@ -1,0 +1,12 @@
+---
+- name: "Directory Exists | {{ monit_log_path }}"
+  file:
+    state: directory
+    path: "{{ monit_log_path }}"
+    owner: "{{ monit_user }}"
+    group: wcmetrics
+    mode: 0775
+  tags:
+    - directory-structure
+    - logging
+    - monit

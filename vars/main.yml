@@ -1,4 +1,5 @@
 ---
+monit_user: root
 monit_poll_rate: 15
 
 monit_log_root: "{{ log_root }}/monit"
