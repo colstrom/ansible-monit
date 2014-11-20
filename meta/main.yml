@@ -1,7 +1,0 @@
----
-- role: meta/logging
-  logging_name: monit
-  logging_group: wcmetrics 
-  logging_files:
-    - tags: 'service'
-      path: "{{ monit_log_path }}"
