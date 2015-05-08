@@ -1,4 +1,15 @@
 ---
 dependencies:
-  - role: package/logrotate
+  - role: colstrom.logrotate
     logrotate_name: monit
+galaxy_info:
+  author: "Chris Olstrom"
+  company: "TELUS digital"
+  description: "Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations."
+  license: MIT
+  platforms:
+    - name: Ubuntu
+      versions:
+      - trusty
+  categories:
+    - system
