@@ -4,6 +4,12 @@
 
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
+## Important
+
+This playbook is no longer maintained. Recommended alternatives:
+  * [PM2] for `node.js` applications (eye is a good fit here too, but `PM2` has some nice extras for node)
+  * [eye](https://github.com/kostya/eye) for anything else.
+
 ## Tunables
 
 * `monit_user` (string) - User to run monit as
